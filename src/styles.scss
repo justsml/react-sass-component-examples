@@ -3,13 +3,11 @@
   text-align: center;
 }
 
-
 /*
-Note: Could wrap the following classes inside a constraining `.modal-dialog` selector
+Note: the `.modal-dialog` selector is used to constrain nested classes
 */
-
 .modal-dialog {
-  &.darker {
+  &.dark-mode {
     .modal-content { background: #333; color: #fff; }
     .modal-header { text-align: center; }
     .modal-body { margin: 1.2rem; }
@@ -17,29 +15,18 @@ Note: Could wrap the following classes inside a constraining `.modal-dialog` sel
   &.no-header {
     .modal-header { display: none; }
   }
-  &.fluid-width {
-    max-width: 80%;
-  }
   &.spaced-buttons {
     .modal-footer { justify-content: space-between; }
   }
+  &.fluid-width {
+    max-width: 80%;
+  }
 }
 
-
-/*
-Limiting selector depth:
-.darker {
-  .modal-content { background: #333; color: #fff; }
-  .modal-header { text-align: center; }
-  .modal-body { margin: 1.2rem; }
+.navbar {
+  overflow: hidden;
+  justify-content: start;
+  &.fixed-bottom {
+    padding: 1em 0.25em;
+  }
 }
-.no-header {
-  .modal-header { display: none; }
-}
-.fluid-width {
-  max-width: 80%;
-}
-.spaced-buttons {
-  .modal-footer { justify-content: space-between; }
-}
-*/

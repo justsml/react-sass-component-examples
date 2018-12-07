@@ -36,7 +36,7 @@ class MyModal extends React.Component {
   render() {
     return (
       <div className={this.props.className}>
-        <Button color="danger" onClick={this.toggle}>
+        <Button color={this.props.buttonColor || "danger"} onClick={this.toggle}>
           {this.props.buttonLabel}
         </Button>
         <Modal
