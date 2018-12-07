@@ -1,6 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /*
@@ -11,6 +12,8 @@ Note: the `.modal-dialog` selector is used to constrain nested classes
     .modal-content { background: #333; color: #fff; }
     .modal-header { text-align: center; }
     .modal-body { margin: 1.2rem; }
+    /* override the card header text color when it's inside .dark-mode */
+    .card-header { color: #333; }
   }
   &.no-header {
     .modal-header { display: none; }
@@ -25,8 +28,13 @@ Note: the `.modal-dialog` selector is used to constrain nested classes
 
 .navbar {
   overflow: hidden;
-  justify-content: start;
-  &.fixed-bottom {
-    padding: 1em 0.25em;
-  }
+  justify-content: space-between;
+  margin-top: 60px;
+  font-size: 1.3em;
+
+  &.fixed-bottom { padding: 1em 1.25em; }
+}
+
+.card {
+  &.cat-box { margin: 0.5em 0 0.25em 0; }
 }
