@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+/*
+Note: Could wrap the following classes inside a constraining `.modal-dialog` selector
+*/
+
+.modal-dialog {
+  &.darker {
+    .modal-content { background: #333; color: #fff; }
+    .modal-header { text-align: center; }
+    .modal-body { margin: 1.2rem; }
+  }
+  &.no-header {
+    .modal-header { display: none; }
+  }
+  &.fluid-width {
+    max-width: 80%;
+  }
+  &.spaced-buttons {
+    .modal-footer { justify-content: space-between; }
+  }
+}
+
+
+/*
+Limiting selector depth:
+.darker {
+  .modal-content { background: #333; color: #fff; }
+  .modal-header { text-align: center; }
+  .modal-body { margin: 1.2rem; }
+}
+.no-header {
+  .modal-header { display: none; }
+}
+.fluid-width {
+  max-width: 80%;
+}
+.spaced-buttons {
+  .modal-footer { justify-content: space-between; }
+}
+*/
