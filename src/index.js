@@ -21,7 +21,7 @@ function App() {
       <p>
         <a href='https://github.com/justsml/react-sass-component-examples' target='_blank'>View project on GitHub</a>
         <br />
-        This is a demo of <b>Component-oriented Sass</b>. We'll define & use some modifiers to affect how a Bootstrap Modal appears.
+        This is a demo of <b>Component-oriented Sass</b>. We&apos;ll define & use some modifiers to affect how a Bootstrap Modal appears.
         <br />
         <b>List of Modal modifiers:</b> <i>.dark-mode</i>, <i>.no-header</i>, <i>.spaced-buttons</i> and <i>.fluid-width</i>.
 
